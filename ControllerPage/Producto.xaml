@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppApiConsumer.ControllerPage.Producto"
+             Title="Producto">
+    <VerticalStackLayout>
+        <Label Text="Products" FontSize="30" HorizontalOptions="Center" Margin="10, 10"/>
+
+        <StackLayout Margin="30,10">
+            <Label>Id</Label>
+            <Entry x:Name="txtIdProduct" />
+        </StackLayout>
+
+        <StackLayout Margin="30,10">
+            <Label>Name</Label>
+            <Entry x:Name="txtNameProduct" />
+        </StackLayout>
+
+        <StackLayout Margin="30,10">
+            <Label>Price</Label>
+            <Entry x:Name="txtPriceProduct"/>
+        </StackLayout>
+
+        <StackLayout Margin="30,10">
+            <Label>IVA</Label>
+            <Entry x:Name="txtIvaProduct" />
+        </StackLayout>
+
+        <StackLayout Margin="30,10">
+            <Label>Category ID</Label>
+            <Entry x:Name="txtCategoryIdProduct" />
+        </StackLayout>
+
+        <StackLayout Margin="40,10">
+            <Button Text="Save"  Margin="0,10" Clicked="PostProduct_Clicked"/>
+            <Button Text="Get" Margin="0,10" Clicked="GetProduct_Clicked"/>
+            <Button Text="Update" Margin="0,10" Clicked="PutProduct_Clicked"/>
+            <Button Text="Delete" Margin="0,10" Clicked="DeleteProduct_Clicked"/>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>
