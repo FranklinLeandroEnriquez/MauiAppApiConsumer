@@ -6,6 +6,17 @@
     <VerticalStackLayout>
         <Label Text="Categorías" FontSize="20" HorizontalOptions="Center" Margin="10, 10"/>
 
+        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Ver" Margin="10" Clicked="GetByIdProduct"/>
+                <Button Text="Guardar"  Margin="10" Clicked="PostByProduct"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Actualizar" Margin="10" Clicked="PutByProduct"/>
+                <Button Text="Eliminar" Margin="10" Clicked="DeleteByProduct"/>
+            </StackLayout>
+        </StackLayout>
+
         <StackLayout>
             <Label Text="ID"/>
             <Entry x:Name="txtId" Keyboard="Numeric"/>
@@ -18,11 +29,5 @@
             <Label x:Name="lblNameError" TextColor="Red" IsVisible="False" Text="Name is required"/>
         </StackLayout>
 
-        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-            <Button Text="Save"  Margin="10" Clicked="Post_Clicked"/>
-            <Button Text="Get" Margin="10" Clicked="Get_Clicked"/>
-            <Button Text="Update" Margin="10" Clicked="Put_Clicked"/>
-            <Button Text="Delete" Margin="10" Clicked="Delete_Clicked"/>
-        </StackLayout>
     </VerticalStackLayout>
 </ContentPage>
